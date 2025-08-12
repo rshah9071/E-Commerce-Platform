@@ -1,0 +1,350 @@
+/* General Body and Container Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+.main-header {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: #007bff;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 1.5em;
+}
+
+.cart-count {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.7em;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+/* Hero Section */
+#hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    background-color: #555; /* Fallback background color */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Product Grid */
+#featured-products,
+#shop-products {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 15px 0 10px;
+}
+
+.product-card h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.product-card .price {
+    font-size: 1.1em;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Product Detail Page */
+#product-detail {
+    margin-top: 40px;
+}
+
+.product-detail-card {
+    display: flex;
+    gap: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail-card img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.product-info .price {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.product-info .description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Cart Page */
+#shopping-cart {
+    margin-top: 40px;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.cart-summary h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.cart-summary p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* About and Contact Pages */
+#about,
+#contact {
+    margin-top: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Shiny Colorful About Page Styles */
+.shiny-colorful-background {
+    background: linear-gradient(135deg, #FFC0CB, #ADD8E6, #90EE90, #FFD700);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.content-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.content-card h2 {
+    color: #4B0082; /* Indigo */
+    text-align: center;
+    border-bottom: 2px solid #FFC0CB;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.content-card p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* New Checkout Page Styling */
+.checkout-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.order-summary-card,
+.checkout-form-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.order-summary-card h3,
+.checkout-form-card h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#checkout-items {
+    list-style: none;
+    padding: 0;
+}
+
+#checkout-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.checkout-total {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-top: 2px solid #eee;
+    padding-top: 15px;
+}
+
+/* Footer */
+.main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}

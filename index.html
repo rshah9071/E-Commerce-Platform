@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAHJEE - E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">SHAHJEE</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="hero">
+            <h2>Welcome to Your New Store</h2>
+            <p>Discover a wide range of products, from electronics to fashion.</p>
+            <a href="shop.html" class="button">Shop Now</a>
+        </section>
+
+        <section id="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <a href="product.html?name=Women-Clothing&price=8995&image=summer-clothing-1.jpeg"><img src="images/summer-clothing-1.jpeg" alt="A collection of Women clothes"></a>
+                    <h3><a href="product.html?name=Women-Clothing&price=8995&image=summer-clothing-1.jpeg">A collection of Women clothes</a></h3>
+                    <p class="price">Rs.8995</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <a href="product.html?name=Children-Clothing&price=4995&image=summer-clothing-2.jpeg"><img src="images/summer-clothing-2.jpeg" alt="A collection of Children clothes"></a>
+                    <h3><a href="product.html?name=Children-Clothing&price=4995&image=summer-clothing-2.jpeg">A collection of Children clothes </a></h3>
+                    <p class="price">Rs.4995</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <a href="product.html?name=Mens-Clothing&price=7895&image=summer-clothing-3.jpeg"><img src="images/summer-clothing-3.jpeg"alt=" A Collection of Mens clothes"></a>
+                    <h3><a href="product.html?name=Mens-Clothing&price=7895&image=summer-clothing-3.jpeg">A collection of Mens Clothes</a></h3>
+                    <p class="price">Rs.7895</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 SHAHJEE. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
